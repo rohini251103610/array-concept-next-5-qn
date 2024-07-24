@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+//longest string in array
+  let str = [
+    "I am a Student",
+    "I am learned hibernate",
+    "I am learning javascript"
+];
+function longestString() {
+    return str.sort(function (a, b) {
+        return b.length - a.length;
+    })[0];
+}
+console.log(longestString());
+
+
+
+// creating an array in range
+let n = Array.from({ length: 5 }, (_, i) => i + 1);
+console.log(n);
+
+
+
+//Removing array items by index
+let index = 3;
+let numArray = [3,5,6,16,23];
+numArray.splice(index,1);
+console.log("Array Elements After Removing Element At Index: " + index + " is " + numArray);
+
+
+
+//Array spreading
+const num1=[1,2,3,4];
+const num2=[5,6,7,8,];
+const merge=[...num1,...num2];
+console.log(merge);
+
+
+
+
+
+
+//Inserting elements in an array
+function insertElement() {
+    let arr = [1, 2, 3, 4, 5];
+    let index = 3;
+    let element = 23;
+arr.splice(index, 0, element);
+    console.log(arr);
+}
+insertElement();
+
+
+
+
+     </script>
+</body>
+</html>
